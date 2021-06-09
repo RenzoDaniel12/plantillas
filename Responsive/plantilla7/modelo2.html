@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        [class*='col-']{
+          float:left;
+          padding: 15px;
+          width: 100%;
+        }
+      
+      /*hacer una estilo para todas las clases que empiecen
+      con col-  */
+      [class*='col-']{
+          float:left;
+          padding: 15px;
+          
+      }
+      header{
+          background-color: #9933CC;
+          color:white;
+          padding: 25px;
+      }
+      .menu ul{
+          list-style-type: none;
+          text-align: center;
+      }
+      .menu ul li{
+          padding:10px 15px;
+          background-color: #33B5E5;
+          color:white;
+          margin:5px;
+      }
+      .row::after{
+          content: '';
+          display: table;
+          clear: both;
+      }
+      .aside{
+          background-color: #33B5E5;
+          color:white;
+          margin-top:20px;
+          height: 250px;
+      }
+      footer{
+          width: 100%;
+          padding: 25px;
+          background-color: #217ea0;
+          color:white;
+          margin-top:20px;
+      }
+      @media only screen and (min-width:627px){
+        .col-m-1{width: 8.33%;}
+        .col-m-2{width: 16.66%;}
+        .col-m-3{width: 25%;}
+        .col-m-4{width: 33.33%;}
+        .col-m-5{width: 41.66%;}
+        .col-m-6{width: 50%;}
+        .col-m-7{width: 58.33%;}
+        .col-m-8{width: 66.66%;}
+        .col-m-9{width: 75%;}
+        .col-m-10{width: 83.33%;}
+        .col-m-11{width: 91.66%;}
+        .col-m-12{width: 100%;}  
+      
+      }
+      @media only screen and (min-width:768px){
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+      
+      }
+      iframe{
+        box-shadow: 0px 0px 5px 1px black;
+      }
+    </style>
+</head>
+<body>
+    <div class="contenedor"> 
+        <div>
+            <iframe class="ifra" src="../../plantilla7.html" name="hola" width="900px" height="700px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+</html>

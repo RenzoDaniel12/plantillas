@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Plantilla 2</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+    [class*="col-"],[class*="coll-"],[class*="colt-"]{
+        float:left;
+        padding:15px;
+       width: 100%;
+
+    }
+    .n{
+        background-color: black;
+        color: white;
+        font-size: 2EM;
+        width: 170px;
+        padding: 25px;
+        text-align: left;
+    }
+    .ni{
+        display: none;
+    }
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.32%;}
+    .col-5{width: 41.65%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+    @media only screen and (max-width:1770px){
+        .coll-1{width: 8.33%;}
+        .coll-2{width: 16.66%;}
+        .coll-3{width: 25%;}
+        .coll-4{width: 33.33%;}
+        .coll-5{width: 41.66%;}
+        .coll-6{width: 50%;}
+        .colt-7{width: 58.33%;}
+        .coll-8{width: 66.66%;}
+        .coll-9{width: 75%;}
+        .coll-10{width: 83.33%;}
+        .coll-11{width: 91.66%;}
+        .coll-12{width: 100%;}  
+        .ni{
+            display: none;
+        }
+        
+    }
+    @media only screen and (max-width:900px){
+        .colm-1{width: 8.33%;}
+        .colm-2{width: 16.66%;}
+        .colm-3{width: 25%;}
+        .colm-4{width: 33.33%;}
+        .colm-5{width: 41.66%;}
+        .colm-6{width: 50%;}
+        .colm-7{width: 58.33%;}
+        .colm-8{width: 66.66%;}
+        .colm-9{width: 75%;}
+        .colm-10{width: 83.33%;}
+        .colm-11{width: 91.66%;}
+        .colm-12{width: 100%;}  
+       .ni{
+           display: none;
+       }
+    }
+    nav{
+        background-color: rgb(255, 255, 255);
+        padding-top: 50px;
+    }
+    
+        
+        
+        
+    
+    .f{
+        background-color: rgb(81, 81, 197);
+        color: white;
+        padding: 30px;
+    }
+    .f.f:hover{
+        border: solid;
+        border-color: rgb(81, 81, 197);
+        background-color: white;
+        color: rgb(81, 81, 197);;
+    }
+    .i{
+        background-color: orange;
+        color: white;
+        padding: 30px;
+    }
+    .i:hover{
+        border: solid;
+        border-color: orange;
+        background-color: white;
+        color: orange;;
+    }
+    .w{
+        background-color: rgb(57, 228, 57);
+        color: white;
+        padding: 30px;
+    }
+    .w:hover{
+        border:solid;
+        border-color: rgb(57, 228, 57);
+        color: rgb(57, 228, 57);
+        background-color: white;
+        text-align: center;
+    }
+    div nav div a{
+    
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;"
+        
+    }
+    .cen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ti{
+        background-color: salmon;
+        color: white;
+        font-size: 2em;
+    }
+    @media only screen and (max-width:540px){
+        .colt-1{width: 8.33%;}
+        .colt-2{width: 16.66%;}
+        .colt-3{width: 25%;}
+        .colt-4{width: 33.33%;}
+        .colt-5{width: 41.66%;}
+        .colt-6{width: 50%;}
+        .colt-7{width: 58.33%;}
+        .colt-8{width: 66.66%;}
+        .colt-9{width: 75%;}
+        .colt-10{width: 83.33%;}
+        .colt-11{width: 91.66%;}
+        .colt-12{width: 100%;}  
+        
+
+        .no,.ni{
+            display: none;
+
+        }
+        .f,.i,.w{
+            padding: 10px;
+        }
+       
+    } 
+    .ma{
+        background-color: black;
+        color: white;
+        padding: 30PX;
+    }
+    .fondo{
+        background-color: rgb(204, 199, 199);
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <NAV class="col-12">
+        <div style="display: flex;
+        justify-content: center;
+        align-items: center;"class="col-6 colt-12 colm-12"><a class="colt-12 colm-8 n" href="">Noticias</a></div>
+        
+        <div class="col-1 colt-4 cen coll-2 colm-4"><a class="f"href="">FACEBOOK</a></div>
+        <div class="col-1 colt-4 coll-2 cen colm-4"><a class="i"href="">INSTAGRAM</a></div>
+        <DIV class="col-1 colt-4 coll-2 cen colm-4"><a class="w" href="">WHATSAPP</a></DIV>
+        <DIV class="col-3 no">
+
+        </DIV>
+        </NAV>
+        <DIV class="fondo col-12">
+            <div class="col-12 cen">
+                <p class="col-8 colt-12 ti">TITULO DE LA NOTICIA</p>
+            </div>
+            <div class="col-12 ce"></div>
+            <div class="col-2 no"></div>
+            <DIV class="col-5 colt-12 cen">
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempora quidem maiores quas veritatis totam, aliquam vero libero non et ex praesentium animi quos unde natus consequuntur temporibus ratione eius alias! Laborum perferendis quas quo sint iusto repellat, voluptatibus perspiciatis dicta aperiam aliquid assumenda, cum enim corrupti reiciendis deleniti labore incidunt possimus. Tempora, fugiat. Soluta voluptates sunt rerum iusto nemo unde eius! Sequi magnam explicabo excepturi ducimus laborum ipsam, veritatis cum suscipit quos odit corrupti quasi architecto incidunt voluptate vero. Architecto ea exercitationem eligendi quae tempora ratione et nihil voluptatibus magnam laboriosam aut consequatur perspiciatis, quisquam placeat nesciunt esse hic consequuntur illum quod voluptas enim recusandae. Atque ipsam aspernatur, repellat, explicabo repudiandae temporibus odit nisi impedit ipsa odio ratione? Voluptate eligendi doloribus, dolores voluptatum animi ducimus corporis modi rerum, cumque porro veniam libero illum. Vitae repudiandae minus obcaecati quaerat magnam numquam veniam ipsum odit illo corporis ducimus ab reiciendis, perferendis optio quod. Aspernatur quos beatae quidem suscipit voluptatum explicabo in tenetur amet et laudantium aliquid repellat eum inventore nulla adipisci delectus totam temporibus a nihil, vero numquam quibusdam qui! Rem deleniti ut maxime totam dignissimos cum eius fugit, est delectus reiciendis tempora ea sed praesentium itaque quasi, impedit corrupti porro!</P>
+            </DIV>
+            <div class="col-3 colt-12 cen">
+                <img src="https://images.theconversation.com/files/307162/original/file-20191216-123992-1jtk6hg.jpg?ixlib=rb-1.1.0&rect=0%2C0%2C4744%2C3614&q=45&auto=format&w=496&fit=clip" width=100% height="auto"> 
+
+            </div>
+            <div class="col-2 no"></div>
+            <div class="col-12 cen">
+
+                <p class="col-8 colt-12 ma">MAS NOTICIAS...</p>
+            </div>
+            
+        </DIV>
+    </div>
+</body>
+</html>

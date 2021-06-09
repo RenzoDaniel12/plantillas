@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icono.ico" type="image/x-icon">
+    <title>Menu</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+
+    .contenedor{
+        padding: 60px 40px;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    /*HEADER*/
+    header{
+        width: 100%;
+        height: 600px;
+        background: #659999; 
+        background: -webkit-linear-gradient(to right, hsla(25, 91%, 54%, 0.705), hsla(180, 20%, 50%, 0.705)),url(img/portada.jpg);
+        background: linear-gradient(to right, hsla(25, 91%, 54%, 0.705), hsla(180, 20%, 50%, 0.705)),url(img/portada.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    header .textos-header{
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-header h1{
+        font-size: 70px;
+        color: #fff;
+    }
+
+    .textos-header h2{
+        font-size: 40px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .wave{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+        a{
+            text-decoration: none;
+        }
+        [class*="col-"],[class*="coll-"],[class*="colt-"]{
+            float:left;
+        padding: 15px;
+        width: 100%;
+
+        }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.32%;}
+        .col-5{width: 41.65%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        .m11{
+            background-image: url(img/plantilla1.PNG);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            padding: 0px;
+        }
+        .m{
+            padding: 0px;
+            height: 100%;
+            box-shadow: 2px 2px 5px #999;
+        }
+        .m:hover{background-color: rgb(255, 255, 255,0.6); }
+        
+        .m:hover a{color:rgb(78, 77, 77); border-bottom: solid;}
+       
+        .ahr{ 
+            color: rgb(0, 0, 0,0.0);
+            font-size: 1.5em;
+        }
+        .m:hover a:hover{
+            border-bottom: solid;
+            color: black;
+            font-weight: bold;
+        }
+        .dec:hover .m{
+            background-color: rgb(255, 255, 255,0.6);
+        }
+        .dec:hover .m a{
+            color: rgb(78, 77, 77);
+        }
+        .m22{
+            background-image: url(img/plantilla2.PNG);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            padding: 0px;
+        }
+        .m33{
+            background-image: url(img/plantilla3.PNG);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            padding: 0px;
+        }
+        .m44{
+            background-image: url(img/plantilla4.PNG);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            padding: 0px;
+        }
+        .m55{
+            background-image: url(img/plantilla5.PNG);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            padding: 0px;
+        }
+        .m66{
+            background-image: url(img/plantilla6.PNG);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            padding: 0px;
+        }
+        .m77{
+            background-image: url(img/plantilla7.PNG);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            padding: 0px;
+        }
+        .m88{
+            background-image: url(img/plantilla8.PNG);
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            padding: 0px;
+        }
+        .cen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+        .h{
+            height: 50vh;
+        }
+        .p1{
+            font-weight: bold;
+        }
+        @media only screen and (max-width:900px){
+            .colm-1{width: 8.33%;}
+            .colm-2{width: 16.66%;}
+            .colm-3{width: 25%;}
+            .colm-4{width: 33.33%;}
+            .colm-5{width: 41.66%;}
+            .colm-6{width: 50%;}
+            .colm-7{width: 58.33%;}
+            .colm-8{width: 66.66%;}
+            .colm-9{width: 75%;}
+            .colm-10{width: 83.33%;}
+            .colm-11{width: 91.66%;}
+            .colm-12{width: 100%;}  
+            .no{
+                    display: none;
+                }
+        }
+        @media only screen and (max-width:540px){
+            .colt-1{width: 8.33%;}
+            .colt-2{width: 16.66%;}
+            .colt-3{width: 25%;}
+            .colt-4{width: 33.33%;}
+            .colt-5{width: 41.66%;}
+            .colt-6{width: 50%;}
+            .colt-7{width: 58.33%;}
+            .colt-8{width: 66.66%;}
+            .colt-9{width: 75%;}
+            .colt-10{width: 83.33%;}
+            .colt-11{width: 91.66%;}
+            .colt-12{width: 100%;} 
+            .no{
+                display: none;
+            }
+            .m88{height: 25vh;}
+            .m77{height: 25vh;}
+            .m66{height: 25vh;}
+            .m55{height: 25vh;}
+            .m44{height: 25vh;}
+            .m33{height: 25vh;}
+            .m22{height: 25vh;}
+            .m11{height: 25vh;}
+        } 
+        .hh{
+            font-size: 2.5em;
+            color: rgb(247, 130, 88);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="textos-header">
+            <h1>¡ELIJE TU PUNTO DE PARTIDA!</h1>
+            <h2>Empieza con cualquiera de nuestras plantillas profesionales y personalízala según tus necesidades</h2>
+        </section>
+        <div style="height: 150px; overflow: hidden;" class="wave">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <div >
+        <div class="col-1 no"></div>
+        <div class="col-10 colm-12 colt-12"><h3 class="hh">Mejores Coincidencias de plantillas</h3></div>
+        <div class="col-1 no"></div>
+        <div class="col-12">
+            
+            <div class="col-12">
+                <div class="col-1 no"></div>
+
+                <div class="col-5 colm-6 colm-12 dec">
+                    <div class="col-12 m33">
+                        <div class="col-12 m cen">
+                            <a class="ahr" href="/Responsive/plantilla3/modelos_responsive.html">Vista previa Automotriz</a>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <P class="p1"> AUTOMOTRIZ</P>
+                        <P>Marketing-Plantillas Populares-Sitios De Mécanica</P>
+                    </div>
+                </div>
+
+                <div class="col-5 colm-6 colm-12 dec">
+                    <div class="col-12 m44">
+                    <div class="col-12 m cen">
+                        <a class="ahr" href="/Responsive/plantilla4/modelos_responsive.html">Vista previa Restaurante</a>
+                    </div>
+                    </div>
+                    <div class="col-12 ">
+                        <P class="p1"> RESTAURANT </P>
+                        <P>Gastronomía-Plantillas Populare- Reseñas</P>
+                    </div>
+                </div>
+                <div class="col-1 no"></div>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-12"> 
+                <div class="col-1 no"></div>
+
+                <div class="col-5 colm-6 colm-12 dec">
+                    <div class="col-12 m77">
+                        <div class="col-12 m cen">
+                            <a class="ahr" href="/Responsive/plantilla7/modelos_responsive.html">Vista previa New Report</a>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <P class="p1"> NEW REPORT</P>
+                        <P>Noticias-Plantillas Populares-Sitio Web</P>
+                    </div>
+                </div>
+
+                <div class="col-5 colm-6 colm-12 dec">
+                    <div class="col-12 m88">
+                    <div class="col-12 m cen">
+                        <a class="ahr" href="/Responsive/plantilla8/modelos_responsive.html">Vista previa Scienc</a>
+                    </div>
+                    </div>
+                    <div class="col-12 ">
+                        <P class="p1">SCIENC</P>
+                        <P>Tecnology-Plantillas Populares-Future</P>
+                    </div>
+                </div>
+                <div class="col-1 no"></div>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-12"> 
+                <div class="col-1 no"></div>
+
+                <div class="col-5 colm-6 colm-12 dec">
+                    <div class="col-12 m55">
+                        <div class="col-12 m cen">
+                            <a class="ahr" href="/Responsive/plantilla5/modelos_responsive.html">Vista previa Akime Hashi</a>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <P class="p1">AKIME HASHI</P>
+                        <P>Gamming-Plantillas Populares-Redes Sociales</P>
+                    </div>
+                </div>
+
+                <div class="col-5 colm-6 colm-12 dec">
+                    <div class="col-12 m66">
+                    <div class="col-12 m cen">
+                        <a class="ahr" href="/Responsive/plantilla6/modelos_responsive.html">Vista previa Howertown</a>
+                    </div>
+                    </div>
+                    <div class="col-12 ">
+                        <P class="p1">HOWERTOWN</P>
+                        <P>Animales-Plantillas Populares-Perritos</P>
+                    </div>
+                </div>
+                <div class="col-1 no"></div>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-12"> 
+                <div class="col-1 no"></div>
+
+                <div class="col-5 colm-6 colm-12 dec">
+                    <div class="col-12 m11">
+                        <div class="col-12 m cen">
+                            <a class="ahr" href="/Responsive/plantilla1/modelos_responsive.html">Vista previa Nevada</a>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <P class="p1"> NEVADA</P>
+                        <P>Marketing-Plantillas Populares-Sitios Turisticos</P>
+                    </div>
+                </div>
+
+                <div class="col-5 colm-6 colm-12 dec">
+                    <div class="col-12 m22">
+                    <div class="col-12 m cen">
+                        <a class="ahr" href="/Responsive/plantilla2/modelos_responsive.html">Vista previa Noticiero</a>
+                    </div>
+                    </div>
+                    <div class="col-12 ">
+                        <P class="p1"> NOTICIERO</P>
+                        <P>Notcias-Plantillas Populares-Sitio Web</P>
+                    </div>
+                </div>
+                <div class="col-1 no"></div>
+            </div>
+            <DIV class="col-12" style="background-color: black; height: 10vh;"></DIV>
+        </div>
+    </div>
+</body>
+</html>

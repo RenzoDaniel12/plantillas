@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla3</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+    [class*="col-"],[class*="coll-"],[class*="colt-"]{
+        float:left;
+        padding:15px;
+        width: 100%;
+
+    }
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.32%;}
+    .col-5{width: 41.65%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+    .na,a{
+        background-color: gray ;
+        color: white;
+    }
+    a{
+        padding: 10px;
+    }
+    a:hover{
+        background-color: rgb(211, 211, 211);
+        border-radius: 25px;
+        color: rgb(0, 0, 0);
+    }
+    .cu{
+        background-image: url(img/carro.jpg);
+        background-size: cover;
+    }
+    .cen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .cu{
+        height: 900px;
+    }
+    .herra{
+        width: 22vh;
+    }
+    .t1{
+        font-size: 2em;
+        color: white;
+        top: 80%;
+    }
+    .t2{
+        color: white;
+        
+    }
+    .tp{
+        position: relative;
+        top: 100%;
+    }
+    .img1{
+        width: 100px;
+        border-radius: 25px;
+        margin: 5px;
+    }
+    .img2{
+        width: 100px;
+        border-radius: 25px;
+        margin: 5px;
+    }
+    .img3{
+        width: 100px;
+        border-radius: 25px;
+        margin: 5px;
+    }
+    .fo{
+        height: 20vh;
+
+    }
+    @media only screen and (max-width:900px){
+        .colm-1{width: 8.33%;}
+        .colm-2{width: 16.66%;}
+        .colm-3{width: 25%;}
+        .colm-4{width: 33.33%;}
+        .colm-5{width: 41.66%;}
+        .colm-6{width: 50%;}
+        .colm-7{width: 58.33%;}
+        .colm-8{width: 66.66%;}
+        .colm-9{width: 75%;}
+        .colm-10{width: 83.33%;}
+        .colm-11{width: 91.66%;}
+        .colm-12{width: 100%;}  
+        .no{
+            display: none;
+        }
+    }
+    @media only screen and (max-width:540px){
+        .colt-1{width: 8.33%;}
+        .colt-2{width: 16.66%;}
+        .colt-3{width: 25%;}
+        .colt-4{width: 33.33%;}
+        .colt-5{width: 41.66%;}
+        .colt-6{width: 50%;}
+        .colt-7{width: 58.33%;}
+        .colt-8{width: 66.66%;}
+        .colt-9{width: 75%;}
+        .colt-10{width: 83.33%;}
+        .colt-11{width: 91.66%;}
+        .colt-12{width: 100%;} 
+        .no{
+            display: none;
+        }
+    } 
+    
+        
+    </style>
+</head>
+<body>
+    <div class="col-12">
+
+            <nav class="col-12 na">
+                <div class="col-3 no"></div>
+                <div class="col-1 colm-2 colt-6"><a href="">INICIO</a></div>
+                <div class="col-1 colm-2 colt-6"><a href="">SERVICIOS</a></div>
+                <div class="col-1 colm-2 colt-6"><a href="">LOGROS</a></div>
+                <div class="col-1 colm-2 colt-6"><a href="">NOSOTROS</a></div>
+                <div class="col-1 colm-1 colt-5"><a href="">CONTACTO</a></div>
+                <div class="col-2 colm-3 colt-7 cen"><a href="">RESERVA </a></div>
+                <div class="col-2 no"></div>
+            </nav>
+
+        <div class="col-12 cu">
+            <div class="col-12 cen ">
+                <img class="herra" src="img/herramientas.png" >
+            </div>
+            <div class="col-12 cen">
+                <h1 class="t1">TOM & MARA</h1>
+            </div>
+            <div class="col-12 cen">
+               <h2 class="t2"> ESPECILISTAS EN AUTOS ANTIGUOS</h2>
+            </div>
+            <footer class="col-12 cen fo">
+                <img class="img1 tp"  src="IMG/facebook.jpg" >
+                <img class="img2 tp " src="img/pinterest.png" >
+                <img class="img3 tp " src="img/instagram.jpg" >
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
